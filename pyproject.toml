@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-player"
+version = "0.1.0"
+description = "A clean, Tkinter-based music player with pygame backend."
+authors = [{name = "Mobin Yousefi", email = ""}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+  "pygame>=2.5",
+  "mutagen>=1.47",
+]
+
+[project.urls]
+Homepage = "https://github.com/mobinyousefi-cs"
+Repository = "https://github.com/mobinyousefi-cs/music-player"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "UP", "B"]
+ignore = []
+
+[tool.black]
+line-length = 100
+
+[tool.pytest.ini_options]
+addopts = "-q"
